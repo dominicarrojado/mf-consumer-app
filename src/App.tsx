@@ -1,10 +1,17 @@
+import { ErrorBoundary } from 'react-error-boundary';
 import './App.css';
-import Provider from 'provider';
+import { lazy, Suspense } from 'react';
+
+const Provider = lazy(() => import('provider'));
 
 const App = () => {
   return (
     <div className="content">
-      <Provider />
+      <ErrorBoundary fallback={<p>⚠️ Something went wrong</p>}>
+        <Suspense fallback={<p>Loading...</p>}>
+          <Provider />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 };

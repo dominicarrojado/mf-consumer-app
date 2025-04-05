@@ -1,0 +1,42 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches: ['main']
+  workflow_call:
+    inputs:
+      upload:
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: ESLint check
+        run: yarn lint
+
+      - name: Run tests
+        run: yarn test
+
+      - name: Build
+        run: yarn build
+
+      - name: Upload artifact
+        if: inputs.upload == true
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'

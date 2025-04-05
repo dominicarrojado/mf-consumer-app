@@ -19,8 +19,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "*": ["./@mf-types/*"]
-    }
+      "*": ["./@mf-types/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"]
+    },
+
+    "types": ["@testing-library/jest-dom"]
   },
   "include": ["src"]
 }

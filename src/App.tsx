@@ -9,21 +9,24 @@ import '@fontsource/roboto/400-italic.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/500-italic.css';
 import './App.css';
+import PageHeaderLoading from './components/PageHeaderLoading';
 
 const Provider = lazy(() => import('provider'));
 
 const App = () => {
   return (
-    <div className="flex h-screen w-full flex-col text-center">
-      <ErrorBoundary fallback={<p>⚠️ Something went wrong</p>}>
-        <Suspense fallback={<p>Loading...</p>}>
+    <>
+      <ErrorBoundary fallback={null}>
+        <Suspense fallback={<PageHeaderLoading />}>
           <Provider />
         </Suspense>
       </ErrorBoundary>
-      <h1 className="mt-auto py-5 text-center text-3xl font-medium">
-        I&apos;m the consumer app
-      </h1>
-    </div>
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-2 py-8 text-center">
+        <h1 className="font-poppins my-10 text-3xl font-bold text-gray-900">
+          I&apos;m the consumer app
+        </h1>
+      </div>
+    </>
   );
 };
 

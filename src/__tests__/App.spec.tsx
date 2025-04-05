@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
-import App from '../src/App';
 import { act } from 'react';
+import App from '../App';
 
 describe('App', () => {
   it('should render successfully', async () => {

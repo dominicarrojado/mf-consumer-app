@@ -10,5 +10,7 @@ export default createModuleFederationConfig({
     'react-dom': { singleton: true },
     tailwindcss: { singleton: true },
     '@tailwindcss/postcss': { singleton: true },
+    '@fontsource/roboto': { singleton: true },
+    '@fontsource/poppins': { singleton: true },
   },
 });

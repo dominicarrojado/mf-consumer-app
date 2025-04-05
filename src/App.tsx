@@ -10,6 +10,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/500-italic.css';
 import './App.css';
 import PageHeaderLoading from './components/PageHeaderLoading';
+import HeroSection from './components/HeroSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -21,11 +22,7 @@ const App = () => {
           <Provider />
         </Suspense>
       </ErrorBoundary>
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-2 py-8 text-center">
-        <h1 className="font-poppins my-10 text-3xl font-bold text-gray-900">
-          I&apos;m the consumer app
-        </h1>
-      </div>
+      <HeroSection />
     </>
   );
 };

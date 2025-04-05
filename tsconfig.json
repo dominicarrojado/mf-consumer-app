@@ -21,7 +21,8 @@
     "paths": {
       "*": ["./@mf-types/*"],
       "@/components/*": ["./src/components/*"],
-      "@/lib/*": ["./src/lib/*"]
+      "@/lib/*": ["./src/lib/*"],
+      "@/static/*": ["./src/static/*"]
     },
 
     "types": ["@testing-library/jest-dom"]

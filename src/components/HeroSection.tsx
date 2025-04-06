@@ -8,17 +8,22 @@ function HeroSection() {
       <div
         className={cn(
           'mx-auto h-[580px] w-full max-w-[1435px] rounded-[20px] bg-[url(@/static/images/hero-banner-sm.png)] bg-cover bg-center bg-no-repeat px-[15px] pt-[50px] pb-[30px]',
-          'md:h-[540px] md:bg-[url(@/static/images/hero-banner-md.png)] md:px-[20px]',
+          'sm:h-[540px] sm:bg-[url(@/static/images/hero-banner-md.png)] sm:px-[20px]',
           'lg:bg-[url(@/static/images/hero-banner-lg.png)]',
-          'lg:px-[50px] lg:pt-[150px]'
+          'lg:pt-[150px] xl:px-[50px]'
         )}
       >
-        <div className="mx-auto flex h-full w-full max-w-7xl flex-col">
+        <div
+          className={cn(
+            'mx-auto flex h-full w-full max-w-[682px] flex-col',
+            'lg:max-w-5xl'
+          )}
+        >
           <div className="flex flex-col gap-[10px] text-white">
             <h1
               className={cn(
                 'font-poppins max-w-[500px] text-[30px] leading-[45px] font-semibold',
-                'lg:text-[40px] lg:leading-[60px]'
+                'sm:text-[40px] sm:leading-[60px]'
               )}
             >
               <Balancer>Find the right mortgage for your dream home</Balancer>
@@ -37,13 +42,13 @@ function HeroSection() {
           <div
             className={cn(
               'mt-auto flex flex-col gap-[15px]',
-              'md:mt-[50px] md:flex-row! md:gap-[20px]'
+              'sm:mt-[50px] sm:flex-row! sm:gap-[20px]'
             )}
           >
-            <Button className={cn('w-full', 'md:w-fit!')}>Buying A Home</Button>
+            <Button className={cn('w-full', 'sm:w-fit!')}>Buying A Home</Button>
             <Button
               variant="outline-primary"
-              className={cn('w-full', 'md:w-fit!')}
+              className={cn('w-full', 'sm:w-fit!')}
             >
               Refinancing A Mortgage
             </Button>

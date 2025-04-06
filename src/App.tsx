@@ -11,6 +11,7 @@ import '@fontsource/roboto/500-italic.css';
 import './App.css';
 import PageHeaderLoading from './components/PageHeaderLoading';
 import HeroSection from './components/HeroSection';
+import BenefitsSection from './components/BenefitsSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -23,6 +24,7 @@ const App = () => {
         </Suspense>
       </ErrorBoundary>
       <HeroSection />
+      <BenefitsSection />
     </>
   );
 };

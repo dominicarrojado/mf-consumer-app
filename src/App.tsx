@@ -9,7 +9,7 @@ import '@fontsource/roboto/400-italic.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/500-italic.css';
 import './App.css';
-import PageHeaderLoading from './components/PageHeaderLoading';
+import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import BenefitsSection from './components/BenefitsSection';
 
@@ -18,8 +18,8 @@ const Provider = lazy(() => import('provider'));
 const App = () => {
   return (
     <>
-      <ErrorBoundary fallback={null}>
-        <Suspense fallback={<PageHeaderLoading />}>
+      <ErrorBoundary fallback={<PageHeaderFallback />}>
+        <Suspense fallback={<PageHeaderFallback />}>
           <Provider />
         </Suspense>
       </ErrorBoundary>

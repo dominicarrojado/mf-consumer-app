@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
-function PageHeaderLoading() {
+const PageHeaderFallback = () => {
   return <div className={cn('h-[50px]', 'lg:h-[70px]')} />;
-}
+};
 
-export default PageHeaderLoading;
+export default PageHeaderFallback;

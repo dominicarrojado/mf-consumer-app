@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin';
 
 export default createModuleFederationConfig({
@@ -5,6 +6,13 @@ export default createModuleFederationConfig({
   remotes: {
     provider: `mf_provider_app@${process.env.PROVIDER_APP_URL}/mf-manifest.json`,
   },
+  exposes:
+    process.env.NODE_ENV === 'development'
+      ? {
+          '.': './src/components/PageHeaderFallback.tsx',
+        }
+      : undefined,
+  runtimePlugins: [path.join(__dirname, './src/runtime-plugin/fallback.ts')],
   shared: {
     react: { singleton: true },
     'react-dom': { singleton: true },

@@ -7,7 +7,7 @@ function HeroSection() {
     <div className="p-[15px]">
       <div
         className={cn(
-          'mx-auto h-[580px] w-full max-w-[1435px] rounded-[20px] bg-[url(@/static/images/hero-banner-sm.png)] bg-cover bg-center bg-no-repeat px-[15px] pt-[50px] pb-[30px]',
+          'mx-auto h-[580px] w-full max-w-[1435px] rounded-[20px] bg-[#153947] bg-[url(@/static/images/hero-banner-sm.png)] bg-cover bg-center bg-no-repeat px-[15px] pt-[50px] pb-[30px]',
           'sm:h-[540px] sm:bg-[url(@/static/images/hero-banner-md.png)] sm:px-[20px]',
           'lg:bg-[url(@/static/images/hero-banner-lg.png)]',
           'lg:pt-[150px] xl:px-[50px]'

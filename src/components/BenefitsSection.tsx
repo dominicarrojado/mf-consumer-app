@@ -9,10 +9,9 @@ function BenefitsSection() {
     <div className="px-[15px]">
       <div
         className={cn(
-          'mx-auto flex max-w-[682px] flex-col gap-[30px] py-[30px]',
-
-          // arrange grid layout left side would be title and benefit items and right side would be media
-          'lg:grid! lg:max-w-6xl lg:grid-cols-[1fr_500px] lg:grid-rows-[auto_1fr] lg:gap-x-[64px]! lg:[grid-template-areas:_"title_media"_"benefits_media"]'
+          'mx-auto flex max-w-2xl flex-col gap-[30px] py-[30px]',
+          'lg:grid! lg:max-w-6xl lg:grid-cols-[1fr_500px] lg:grid-rows-[auto_1fr] lg:[grid-template-areas:_"title_media"_"benefits_media"]',
+          'xl:gap-x-[64px]!'
         )}
       >
         <h2

@@ -1,4 +1,3 @@
-import Balancer from 'react-wrap-balancer';
 import { cn } from '@/lib/utils';
 import Button from './Button';
 
@@ -15,7 +14,7 @@ function HeroSection() {
       >
         <div
           className={cn(
-            'mx-auto flex h-full w-full max-w-[682px] flex-col',
+            'mx-auto flex h-full w-full max-w-2xl flex-col',
             'lg:max-w-5xl'
           )}
         >
@@ -26,17 +25,15 @@ function HeroSection() {
                 'sm:text-[40px] sm:leading-[60px]'
               )}
             >
-              <Balancer>Find the right mortgage for your dream home</Balancer>
+              Find the right mortgage for your dream home
             </h1>
             <p
               className={cn(
                 'font-poppins max-w-[290px] text-[14px] leading-[21px] font-medium'
               )}
             >
-              <Balancer>
-                Make the right home loan decision with our smart tools and
-                expert guidance
-              </Balancer>
+              Make the right home loan decision with our smart tools and expert
+              guidance
             </p>
           </div>
           <div

@@ -12,6 +12,7 @@ import './App.css';
 import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import BenefitsSection from './components/BenefitsSection';
+import BanksSection from './components/BanksSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -25,6 +26,7 @@ const App = () => {
       </ErrorBoundary>
       <HeroSection />
       <BenefitsSection />
+      <BanksSection />
     </>
   );
 };

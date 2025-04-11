@@ -3,6 +3,7 @@ import bannerVideo from '@/static/videos/benefits-banner.mp4';
 import { cn } from '@/lib/utils';
 import { BENEFIT_ITEMS } from '@/lib/content';
 import BenefitItem from './BenefitItem';
+import HeadingTwo from './HeadingTwo';
 
 function BenefitsSection() {
   return (
@@ -14,15 +15,15 @@ function BenefitsSection() {
           'xl:gap-x-[64px]!'
         )}
       >
-        <h2
+        <HeadingTwo
           className={cn(
-            'font-poppins text-center text-[24px] leading-[36px] font-medium text-[#0E2638]',
-            'lg:min-w-[448px] lg:justify-self-center lg:text-left lg:text-[30px] lg:leading-[45px] lg:[grid-area:title]'
+            'text-center',
+            'lg:min-w-[448px] lg:justify-self-center lg:text-left lg:[grid-area:title]'
           )}
         >
           Home loans, <br className="sm:hidden lg:block" />
           the smarter way
-        </h2>
+        </HeadingTwo>
         <div
           className={cn(
             'flex h-[330px] w-full justify-center overflow-hidden rounded-[16px] bg-[#f2f2f2]',

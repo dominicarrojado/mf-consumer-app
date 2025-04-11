@@ -13,6 +13,7 @@ import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import BenefitsSection from './components/BenefitsSection';
 import BanksSection from './components/BanksSection';
+import OnboardingSection from './components/OnboardingSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -27,6 +28,7 @@ const App = () => {
       <HeroSection />
       <BenefitsSection />
       <BanksSection />
+      <OnboardingSection />
     </>
   );
 };

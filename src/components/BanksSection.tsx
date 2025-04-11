@@ -27,7 +27,7 @@ function BanksSection() {
   }, [windowWidth]);
 
   return (
-    <div className="pt-[40px] pb-[70px]">
+    <div className={cn('pt-[40px] pb-[60px]', 'lg:pb-[70px]')}>
       <h2 className="font-poppins px-[15px] text-center text-[14px] leading-[21px] font-medium text-[#0E2638]">
         We partner with all major banks in Singapore{' '}
         <br className="sm:hidden" />

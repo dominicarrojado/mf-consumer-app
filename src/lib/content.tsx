@@ -1,4 +1,3 @@
-import type { BenefitItemProps } from './types';
 import dbsLogo from '@/static/logos/banks/dbs.svg?inline';
 import ocbcLogo from '@/static/logos/banks/ocbc.svg?inline';
 import citibankLogo from '@/static/logos/banks/citibank.svg?inline';
@@ -11,6 +10,12 @@ import bocLogo from '@/static/logos/banks/bank-of-china.svg?inline';
 import sbiLogo from '@/static/logos/banks/state-bank-of-india.svg?inline';
 import spfLogo from '@/static/logos/banks/singapura-finance.svg?inline';
 import hsbcLogo from '@/static/logos/banks/hsbc.svg?inline';
+import { PurchaseTimeline, SearchStage } from './enums';
+import type {
+  BenefitItemProps,
+  OnboardingCardProps,
+  OnboardingResult,
+} from './types';
 
 export const BENEFIT_ITEMS: Array<BenefitItemProps> = [
   {
@@ -89,3 +94,79 @@ export const BANK_ITEMS = [
     logo: hsbcLogo,
   },
 ];
+
+export const SEARCH_STAGE_QUESTION: OnboardingCardProps = {
+  id: 'searchStage',
+  title: (
+    <>
+      Where are you in your home <br className="lg:hidden" />
+      ownership journey?
+    </>
+  ),
+  options: [
+    {
+      label: 'Just researching',
+      value: SearchStage.SEARCHING,
+    },
+    {
+      label: 'Actively viewing properties',
+      value: SearchStage.VIEWING,
+    },
+    {
+      label: 'Making offers',
+      value: SearchStage.SHORTLISTED,
+    },
+    {
+      label: 'Looking to refinance',
+      value: SearchStage.SELL_THEN_BUY,
+    },
+  ],
+};
+
+export const PURCHASE_TIMELINE_QUESTION: OnboardingCardProps = {
+  id: 'purchaseTimeline',
+  title: (
+    <>
+      When are you planning to purchase <br className="lg:hidden" />
+      your home?
+    </>
+  ),
+  options: [
+    {
+      label: 'In less than 3 months',
+      value: PurchaseTimeline.ZERO_TO_THREE,
+    },
+    {
+      label: 'In 4 - 6 months',
+      value: PurchaseTimeline.FOUR_TO_SIX,
+    },
+    {
+      label: 'In 7+ months',
+      value: PurchaseTimeline.SEVEN_PLUS,
+    },
+    {
+      label: 'Not sure',
+      value: PurchaseTimeline.NOT_SURE,
+    },
+  ],
+};
+
+export const AFFORDABILITY_RESULT: OnboardingResult = {
+  title: 'Decide how much you can comfortably spend on a home.',
+  linkText: 'Calculate Your Affordability',
+};
+
+export const PRE_QUAL_RESULT: OnboardingResult = {
+  title: 'Know the amount of home loan you are qualified for.',
+  linkText: 'Get Pre-Qualified',
+};
+
+export const LOAN_COMPARISON_RESULT: OnboardingResult = {
+  title: 'Explore your financing options and the latest loan rates.',
+  linkText: 'Find Loans',
+};
+
+export const REFINANCE_RESULT: OnboardingResult = {
+  title: 'Monitor and track your home loan.',
+  linkText: 'Estimate Your Savings',
+};

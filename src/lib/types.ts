@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { HTMLProps, ReactNode } from 'react';
 
 export interface BenefitItemProps {
   title: string;
@@ -28,4 +28,13 @@ export interface OnboardingCardProps {
 export interface OnboardingResult {
   title: string;
   linkText: string;
+}
+
+export interface FeatureCardProps {
+  id: string;
+  number: number;
+  title: string;
+  description: string;
+  linkText: string;
+  image: HTMLProps<HTMLImageElement>;
 }

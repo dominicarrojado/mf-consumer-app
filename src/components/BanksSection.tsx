@@ -4,10 +4,6 @@ import { cn } from '@/lib/utils';
 import { BANK_ITEMS } from '@/lib/content';
 import { BREAKPOINT_MD, BREAKPOINT_SM } from '@/lib/constants';
 
-import 'swiper/css';
-import 'swiper/css/grid';
-import 'swiper/css/pagination';
-
 function BanksSection() {
   return (
     <div className={cn('pt-[40px] pb-[60px]', 'lg:pb-[70px]')}>

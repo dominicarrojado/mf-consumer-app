@@ -10,9 +10,16 @@ import bocLogo from '@/static/logos/banks/bank-of-china.svg?inline';
 import sbiLogo from '@/static/logos/banks/state-bank-of-india.svg?inline';
 import spfLogo from '@/static/logos/banks/singapura-finance.svg?inline';
 import hsbcLogo from '@/static/logos/banks/hsbc.svg?inline';
+import featureQualify from '@/static/images/feature-qualify.png';
+import featureQuality2x from '@/static/images/feature-quality@2x.png';
+import featureMatch from '@/static/images/feature-match.png';
+import featureMatch2x from '@/static/images/feature-match@2x.png';
+import featureApply from '@/static/images/feature-apply.png';
+import featureApply2x from '@/static/images/feature-apply@2x.png';
 import { PurchaseTimeline, SearchStage } from './enums';
 import type {
   BenefitItemProps,
+  FeatureCardProps,
   OnboardingCardProps,
   OnboardingResult,
 } from './types';
@@ -170,3 +177,44 @@ export const REFINANCE_RESULT: OnboardingResult = {
   title: 'Monitor and track your home loan.',
   linkText: 'Estimate Your Savings',
 };
+
+export const FEATURE_ITEMS: Array<FeatureCardProps> = [
+  {
+    id: 'qualify',
+    number: 1,
+    title: 'Qualify',
+    description:
+      'Quick, digital, bank-backed checks for fast, loan qualification.',
+    linkText: 'Try Now',
+    image: {
+      src: featureQualify,
+      srcSet: `${featureQuality2x} 2x, ${featureQualify} 1x`,
+      alt: 'Your Pre-Qualification report is ready',
+    },
+  },
+  {
+    id: 'match',
+    number: 2,
+    title: 'Match',
+    description:
+      'Compare the latest rates from all banks and land on your ideal loan.',
+    linkText: 'Check Rates',
+    image: {
+      src: featureMatch,
+      srcSet: `${featureMatch2x} 2x, ${featureMatch} 1x`,
+      alt: 'We recommend these packages with the lowest rates for you',
+    },
+  },
+  {
+    id: 'apply',
+    number: 3,
+    title: 'Apply',
+    description: 'Streamlined and guided online application for all banks.',
+    linkText: 'Apply Now',
+    image: {
+      src: featureApply,
+      srcSet: `${featureApply2x} 2x, ${featureApply} 1x`,
+      alt: 'Get started on your documents upload',
+    },
+  },
+];

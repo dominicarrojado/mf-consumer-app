@@ -9,12 +9,16 @@ import '@fontsource/roboto/400-italic.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/500-italic.css';
 import './App.css';
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
 import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import AdUnit from './components/AdUnit';
 import BenefitsSection from './components/BenefitsSection';
 import BanksSection from './components/BanksSection';
 import OnboardingSection from './components/OnboardingSection';
+import FeaturesSection from './components/FeaturesSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -31,6 +35,7 @@ const App = () => {
       <BenefitsSection />
       <BanksSection />
       <OnboardingSection />
+      <FeaturesSection />
     </>
   );
 };

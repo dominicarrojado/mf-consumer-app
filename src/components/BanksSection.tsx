@@ -1,31 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Grid, Pagination } from 'swiper/modules';
+import { cn } from '@/lib/utils';
 import { BANK_ITEMS } from '@/lib/content';
+import { BREAKPOINT_MD, BREAKPOINT_SM } from '@/lib/constants';
 
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
-import { cn } from '@/lib/utils';
-import { useWindowWidth } from '@/lib/hooks';
-import { useMemo } from 'react';
-import { BREAKPOINT_LG, BREAKPOINT_MD } from '@/lib/constants';
 
 function BanksSection() {
-  const windowWidth = useWindowWidth();
-  const gridRows = useMemo(
-    () => (windowWidth < BREAKPOINT_LG ? 2 : 1),
-    [windowWidth]
-  );
-  const slidesPerView = useMemo(() => {
-    if (windowWidth < BREAKPOINT_MD) {
-      return 3;
-    } else if (windowWidth < BREAKPOINT_LG) {
-      return 4;
-    } else {
-      return 6;
-    }
-  }, [windowWidth]);
-
   return (
     <div className={cn('pt-[40px] pb-[60px]', 'lg:pb-[70px]')}>
       <h2 className="font-poppins px-[15px] text-center text-[14px] leading-[21px] font-medium text-[#0E2638]">
@@ -34,8 +17,22 @@ function BanksSection() {
         to bring you the best mortgage deals
       </h2>
       <Swiper
-        slidesPerView={slidesPerView}
-        grid={{ rows: gridRows }}
+        slidesPerView={3}
+        grid={{ rows: 2 }}
+        breakpoints={{
+          [BREAKPOINT_SM]: {
+            slidesPerView: 4,
+            grid: {
+              rows: 1,
+            },
+          },
+          [BREAKPOINT_MD]: {
+            slidesPerView: 5,
+            grid: {
+              rows: 1,
+            },
+          },
+        }}
         autoplay={{
           delay: 2000,
           disableOnInteraction: true,

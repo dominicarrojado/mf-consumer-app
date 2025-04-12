@@ -23,7 +23,7 @@ export default defineConfig({
       },
       viewport: 'width=device-width, initial-scale=1.0',
       description:
-        'Whether for new home loans or refinance, get the best rates and personalized advice with PropertyGuru Finance.',
+        'Whether for new home loans or refinance, get the best rates and personalised advice with PropertyGuru Finance.',
     },
   },
 });

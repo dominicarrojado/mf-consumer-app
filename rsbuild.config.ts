@@ -15,4 +15,15 @@ export default defineConfig({
       path.resolve(__dirname, 'src/__mocks__'),
     ],
   },
+  html: {
+    template: './src/index.html',
+    meta: {
+      charset: {
+        charset: 'UTF-8',
+      },
+      viewport: 'width=device-width, initial-scale=1.0',
+      description:
+        'Whether for new home loans or refinance, get the best rates and personalized advice with PropertyGuru Finance.',
+    },
+  },
 });

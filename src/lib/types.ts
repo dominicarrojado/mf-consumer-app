@@ -38,3 +38,9 @@ export interface FeatureCardProps {
   linkText: string;
   image: HTMLProps<HTMLImageElement>;
 }
+
+export interface HighlightItemProps {
+  icon: HTMLProps<HTMLImageElement>;
+  title: string;
+  subtitle: string;
+}

@@ -20,6 +20,7 @@ import BanksSection from './components/BanksSection';
 import OnboardingSection from './components/OnboardingSection';
 import FeaturesSection from './components/FeaturesSection';
 import CallToActionSection from './components/CallToActionSection';
+import HighlightsSection from './components/HighlightsSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -38,6 +39,7 @@ const App = () => {
       <OnboardingSection />
       <FeaturesSection />
       <CallToActionSection />
+      <HighlightsSection />
     </>
   );
 };

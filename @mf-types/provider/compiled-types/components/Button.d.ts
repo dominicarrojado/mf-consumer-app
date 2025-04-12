@@ -1,10 +1,6 @@
-import { HTMLProps } from 'react';
-declare const buttonVariants: {
-    outline: string;
-    light: string;
-};
-type ButtonProps = HTMLProps<HTMLButtonElement> & {
-    variant?: keyof typeof buttonVariants;
-};
-declare function Button(props: ButtonProps): import("react/jsx-runtime").JSX.Element;
+import { type ButtonHTMLAttributes } from 'react';
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    variant?: 'outline' | 'light';
+}
+declare const Button: import("react").ForwardRefExoticComponent<ButtonProps & import("react").RefAttributes<HTMLButtonElement>>;
 export default Button;

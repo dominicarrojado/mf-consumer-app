@@ -1,10 +1,14 @@
+import { Button as HeadlessButton } from '@headlessui/react';
 import { cn } from '@/lib/utils';
 import { type ButtonHTMLAttributes, forwardRef } from 'react';
 
-import { Button as HeadlessButton } from '@headlessui/react';
-
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'outline-primary' | 'link-secondary';
+  variant?:
+    | 'primary'
+    | 'info'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'link-secondary';
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
@@ -23,6 +27,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
             variant === 'outline-primary',
           'text-[#505050] hover:text-[#2C2C2C] active:text-black':
             variant === 'link-secondary',
+          'border border-[#505050] bg-white text-[#505050] hover:bg-[#F2F2F2] active:bg-[#E6E6E6]':
+            variant === 'outline-secondary',
+          'bg-[#455A64] text-white hover:bg-[#37474F] active:bg-[#263238]':
+            variant === 'info',
         },
         className
       )}

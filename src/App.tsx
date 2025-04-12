@@ -11,6 +11,7 @@ import '@fontsource/roboto/500-italic.css';
 import './App.css';
 import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
+import AdUnit from './components/AdUnit';
 import BenefitsSection from './components/BenefitsSection';
 import BanksSection from './components/BanksSection';
 import OnboardingSection from './components/OnboardingSection';
@@ -26,6 +27,7 @@ const App = () => {
         </Suspense>
       </ErrorBoundary>
       <HeroSection />
+      <AdUnit className="mt-[35px] mb-[20px]" />
       <BenefitsSection />
       <BanksSection />
       <OnboardingSection />

@@ -11,3 +11,15 @@ export enum PurchaseTimeline {
   SEVEN_PLUS = '7+ Months',
   NOT_SURE = 'Not Sure',
 }
+
+export enum GoogleAdSenseUnit {
+  PROJECT_BODY = '2574409710',
+}
+
+export enum GoogleAdSenseUnitLayout {
+  IN_ARTICLE = 'in-article',
+}
+
+export enum GoogleAdSenseUnitFormat {
+  FLUID = 'fluid',
+}

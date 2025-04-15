@@ -43,7 +43,7 @@ function BanksSection() {
           '[&_.swiper-pagination-bullet]:mx-[3px]! [&_.swiper-pagination-bullet]:h-[6px]! [&_.swiper-pagination-bullet]:w-[6px]!',
           '[&_.swiper-pagination-bullet-active]:bg-[#007C80]!'
         )}
-        loop={true}
+        loop
       >
         {BANK_ITEMS.map((item) => (
           <SwiperSlide

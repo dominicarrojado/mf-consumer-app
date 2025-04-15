@@ -26,6 +26,7 @@ import type {
   HighlightItemProps,
   OnboardingCardProps,
   OnboardingResult,
+  ReviewItemProps,
 } from './types';
 
 export const BENEFIT_ITEMS: Array<BenefitItemProps> = [
@@ -247,5 +248,79 @@ export const HIGHLIGHT_ITEMS: Array<HighlightItemProps> = [
       src: calendarIcon,
       alt: 'Calendar',
     },
+  },
+];
+
+export const REVIEW_ITEMS: Array<ReviewItemProps> = [
+  {
+    id: 1,
+    reviewerName: 'Fabio Prainito',
+    starRating: 5,
+    timeAgo: '2 months ago',
+    comment:
+      'I highly recommend Joanne Pang! She has been incredibly helpful throughout the entire process. Professional, patient and always willing to assist, even outside regular working hours. Her dedication and expertise made everything smooth and stress free. Thank you, Joanne!',
+  },
+  {
+    id: 2,
+    reviewerName: 'Jennifer Wang',
+    starRating: 5,
+    timeAgo: '2 months ago',
+    comment:
+      'Lily Koh is a star! She is very knowledgeable about the home loan stuff. Responds super quick even beyond working hours. Highly recommend if you need a professional home loan expert.',
+  },
+  {
+    id: 3,
+    reviewerName: 'soh shan shan',
+    starRating: 5,
+    timeAgo: '2 months ago',
+    comment:
+      'Joanne is a professional financial advisor who is fast responding and knowledgeable about the loan enquiry you might have.',
+  },
+  {
+    id: 4,
+    reviewerName: 'Choy Meng Poh',
+    starRating: 5,
+    timeAgo: '3 months ago',
+    comment:
+      'Outstanding swift action. Everything well planned and executed. Impeccable service. Thank you Sheryl',
+  },
+  {
+    id: 5,
+    reviewerName: 'Joanna Ye',
+    starRating: 5,
+    timeAgo: '3 months ago',
+    comment:
+      'I appreciate Sheryl with her prompt replies and detailed explanation. Thanks for the great and efficient service!',
+  },
+  {
+    id: 6,
+    reviewerName: 'ShuoYu Yuan',
+    starRating: 5,
+    timeAgo: '3 months ago',
+    comment:
+      'I strongly recommend Sheryl to anyone in need of home loan. Her professionalism has made a significant difference in our experience to find a best loan package .',
+  },
+  {
+    id: 7,
+    reviewerName: 'Koon Min Wong',
+    starRating: 5,
+    timeAgo: '3 months ago',
+    comment:
+      'Sheryl is very helpful and made the mortgage process very smooth. Much appreciated!',
+  },
+  {
+    id: 8,
+    reviewerName: 'Tianyu Lang',
+    starRating: 5,
+    timeAgo: '4 months ago',
+    comment: 'Excellent service with Agent Sheryl for housing loan application',
+  },
+  {
+    id: 9,
+    reviewerName: 'Chen Haoran',
+    starRating: 5,
+    timeAgo: '4 months ago',
+    comment:
+      'Was a great experience with Joanne as a mortgage adviser. As a first time buyers, being very helpful and patient.',
   },
 ];

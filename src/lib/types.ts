@@ -44,3 +44,11 @@ export interface HighlightItemProps {
   title: string;
   subtitle: string;
 }
+
+export interface ReviewItemProps {
+  id: number;
+  reviewerName: string;
+  starRating: number;
+  timeAgo: string;
+  comment: string;
+}

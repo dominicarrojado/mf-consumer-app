@@ -21,6 +21,7 @@ import OnboardingSection from './components/OnboardingSection';
 import FeaturesSection from './components/FeaturesSection';
 import CallToActionSection from './components/CallToActionSection';
 import HighlightsSection from './components/HighlightsSection';
+import ReviewsSection from './components/ReviewsSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -40,6 +41,7 @@ const App = () => {
       <FeaturesSection />
       <CallToActionSection />
       <HighlightsSection />
+      <ReviewsSection />
     </>
   );
 };

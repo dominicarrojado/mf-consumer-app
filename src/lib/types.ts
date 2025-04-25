@@ -52,3 +52,12 @@ export interface ReviewItemProps {
   timeAgo: string;
   comment: string;
 }
+
+export interface ArticleItemProps {
+  id: number;
+  title: string;
+  image: string;
+  type: string;
+  date: string;
+  url: string;
+}

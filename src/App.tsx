@@ -12,6 +12,7 @@ import './App.css';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
+import { cn } from './lib/utils';
 import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import AdUnit from './components/AdUnit';
@@ -22,6 +23,7 @@ import FeaturesSection from './components/FeaturesSection';
 import CallToActionSection from './components/CallToActionSection';
 import HighlightsSection from './components/HighlightsSection';
 import ReviewsSection from './components/ReviewsSection';
+import ArticlesSection from './components/ArticlesSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -42,6 +44,10 @@ const App = () => {
       <CallToActionSection />
       <HighlightsSection />
       <ReviewsSection />
+      <AdUnit
+        className={cn('mt-[40px] mb-[35px]', 'lg:mt-[30px] lg:mb-[60px]')}
+      />
+      <ArticlesSection />
     </>
   );
 };

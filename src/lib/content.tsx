@@ -21,6 +21,7 @@ import usersIcon from '@/static/icons/circle-users.svg?inline';
 import calendarIcon from '@/static/icons/circle-calendar-checked.svg?inline';
 import { PurchaseTimeline, SearchStage } from './enums';
 import type {
+  ArticleItemProps,
   BenefitItemProps,
   FeatureCardProps,
   HighlightItemProps,
@@ -322,5 +323,46 @@ export const REVIEW_ITEMS: Array<ReviewItemProps> = [
     timeAgo: '4 months ago',
     comment:
       'Was a great experience with Joanne as a mortgage adviser. As a first time buyers, being very helpful and patient.',
+  },
+];
+
+export const ARTICLE_ITEMS: Array<ArticleItemProps> = [
+  {
+    id: 1,
+    title: 'Will Singapore Interest Rates for Home Loans Go Down in 2025?',
+    image:
+      'https://img.iproperty.com.my/angel/520x300-crop/wp-content/uploads/sites/3/2023/11/will-mortgage-rates-in-singapore-come-down-in-2024.jpg',
+    type: 'Article',
+    date: '3 Feb 2025',
+    url: 'https://www.propertyguru.com.sg/property-guides/pgf-rising-interest-rates-post-covid-57668',
+  },
+  {
+    id: 2,
+    title:
+      'Can I Use CPF to Buy Condo or HDB Flat in Singapore? 4 Reasons Not to',
+    image:
+      'https://img.iproperty.com.my/angel/520x300-crop/wp-content/uploads/sites/3/2022/09/tdsr-calculator-how-to-calculate-tdsr.jpeg',
+    type: 'Article',
+    date: '16 Dec 2024',
+    url: 'https://www.propertyguru.com.sg/property-guides/cpf-pay-house-singapore-10391',
+  },
+  {
+    id: 3,
+    title:
+      '6 Ways to Utilise Your Year-end Bonus Towards Your Home Loan in Singapore',
+    image:
+      'https://img.iproperty.com.my/angel/520x300-crop/wp-content/uploads/sites/3/2023/01/how-much-cpf-can-I-use-for-condo-monthly-installment.jpeg',
+    type: 'Article',
+    date: '3 Dec 2024',
+    url: 'https://www.propertyguru.com.sg/property-guides/pgf-bonus-calculator-housing-loan-prepayment-95709',
+  },
+  {
+    id: 4,
+    title: 'How do US Fed Interest Rates Impact Mortgage Rates in Singapore?',
+    image:
+      'https://img.iproperty.com.my/angel/520x300-crop/wp-content/uploads/sites/3/2022/08/propertyguru-finance-benefits.jpg',
+    type: 'Article',
+    date: '28 Nov 2024',
+    url: 'https://www.propertyguru.com.sg/property-guides/pgf-current-fed-interest-rates-95149',
   },
 ];

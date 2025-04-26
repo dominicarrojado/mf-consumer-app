@@ -13,7 +13,6 @@ import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import { cn } from './lib/utils';
-import { BASE_URL } from './lib/constants';
 import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import AdUnit from './components/AdUnit';
@@ -34,7 +33,7 @@ const App = () => {
     <>
       <ErrorBoundary fallback={<PageHeaderFallback />}>
         <Suspense fallback={<PageHeaderFallback />}>
-          <RemotePageHeader brandAnchor={{ href: BASE_URL }} />
+          <RemotePageHeader />
         </Suspense>
       </ErrorBoundary>
       <HeroSection />

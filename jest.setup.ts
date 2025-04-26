@@ -12,7 +12,3 @@ jest.mock('swiper/modules', () => ({
   Grid: jest.fn(),
   Pagination: jest.fn(),
 }));
-
-jest.mock('@/lib/constants', () => ({
-  BASE_URL: '/',
-}));

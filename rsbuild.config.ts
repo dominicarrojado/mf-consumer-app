@@ -26,8 +26,4 @@ export default defineConfig({
         'Whether for new home loans or refinance, get the best rates and personalised advice with PropertyGuru Finance.',
     },
   },
-  server: {
-    base:
-      process.env.NODE_ENV === 'production' ? '/mf-consumer-app/' : undefined,
-  },
 });

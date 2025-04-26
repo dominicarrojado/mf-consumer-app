@@ -26,5 +26,6 @@ export default createModuleFederationConfig({
     '@fontsource/roboto/500-italic.css': { singleton: true },
     clsx: { singleton: true },
     'tailwind-merge': { singleton: true },
+    'framer-motion': { singleton: true },
   },
 });

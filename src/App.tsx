@@ -24,6 +24,7 @@ import CallToActionSection from './components/CallToActionSection';
 import HighlightsSection from './components/HighlightsSection';
 import ReviewsSection from './components/ReviewsSection';
 import ArticlesSection from './components/ArticlesSection';
+import QuestionsSection from './components/QuestionsSection';
 
 const Provider = lazy(() => import('provider'));
 
@@ -48,6 +49,7 @@ const App = () => {
         className={cn('mt-[40px] mb-[35px]', 'lg:mt-[30px] lg:mb-[60px]')}
       />
       <ArticlesSection />
+      <QuestionsSection />
     </>
   );
 };

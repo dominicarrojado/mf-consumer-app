@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export function useWindowWidth() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -15,4 +15,19 @@ export function useWindowWidth() {
   }, []);
 
   return windowWidth;
+}
+
+export function useScrollHeight(isOpen: boolean) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      setHeight(ref.current?.scrollHeight || 0);
+    } else {
+      setHeight(0);
+    }
+  }, [isOpen]);
+
+  return [ref, height] as const;
 }

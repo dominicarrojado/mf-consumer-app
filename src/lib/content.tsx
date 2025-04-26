@@ -19,8 +19,10 @@ import featureApply2xImage from '@/static/images/feature-apply@2x.png';
 import verifiedIcon from '@/static/icons/badge-verified.svg?inline';
 import usersIcon from '@/static/icons/circle-users.svg?inline';
 import calendarIcon from '@/static/icons/circle-calendar-checked.svg?inline';
+import { cn } from './utils';
 import { PurchaseTimeline, SearchStage } from './enums';
 import type {
+  AccordionProps,
   ArticleItemProps,
   BenefitItemProps,
   FeatureCardProps,
@@ -364,5 +366,105 @@ export const ARTICLE_ITEMS: Array<ArticleItemProps> = [
     type: 'Article',
     date: '28 Nov 2024',
     url: 'https://www.propertyguru.com.sg/property-guides/pgf-current-fed-interest-rates-95149',
+  },
+];
+
+export const QUESTION_ITEMS: Array<AccordionProps> = [
+  {
+    id: 1,
+    title: 'What types of loans can PropertyGuru Finance help me with?',
+    content:
+      'PropertyGuru Finance can help you secure the best in-line home and HDB bank loans. Soon, we will be able to assist you with commercial property loans and overseas property loans as well.',
+  },
+  {
+    id: 2,
+    title: 'Why should I choose PropertyGuru Finance instead of a bank?',
+    content: (
+      <p>
+        We partner with all major banks to bring you the best home loan packages
+        in Singapore. Why waste time visiting bank branches and making sense of
+        home loan packages?
+        <br />
+        From sharing customised recommendations to processing your home loan
+        application, our Mortgage Experts will be with you every step of the
+        way.
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    title:
+      'Will I be charged for processing a home loan with PropertyGuru Finance?',
+    content:
+      'No. You can put your mind at ease as our service is free with no hidden charges.',
+  },
+  {
+    id: 4,
+    title: 'How does PropertyGuru Finance get compensated?',
+    content: (
+      <>
+        We receive a small referral fee from the bank when you have accepted the
+        loan. Our team partners with all major banks, giving you access to the
+        lowest interest rates, limited-time bank promotions, and unbiased
+        advice.
+      </>
+    ),
+  },
+  {
+    id: 5,
+    title: 'How do I contact a Mortgage Expert?',
+    content: (
+      <>
+        Simply submit an enquiry for a mortgage loan{' '}
+        <a
+          href="#"
+          className={cn(
+            'underline',
+            'hover:text-[#37474F] active:text-[#263238]'
+          )}
+        >
+          here
+        </a>{' '}
+        and our Mortgage Expert will call you within 1 business day.
+      </>
+    ),
+  },
+  {
+    id: 6,
+    title: 'What documents do I need to apply for a home loan?',
+    content: (
+      <>
+        <div>To get started, you&apos;ll need:</div>
+        <ul>
+          <li>- A copy of your NRIC/Passport</li>
+          <li>- Latest 3 month payslips</li>
+          <li>
+            - Latest Income Tax Notice Assessment (latest two years if
+            you&apos;re self-employed)
+          </li>
+          <li>- Your CPF contribution history</li>
+          <li>
+            - Your{' '}
+            <abbr title="Option to Purchase" className="no-underline">
+              OTP
+            </abbr>{' '}
+            or Sale and Purchase Agreement
+          </li>
+        </ul>
+        <div>
+          We&apos;ll walk you through the rest when you contact us{' '}
+          <a
+            href="#"
+            className={cn(
+              'underline',
+              'hover:text-[#37474F] active:text-[#263238]'
+            )}
+          >
+            here
+          </a>
+          .
+        </div>
+      </>
+    ),
   },
 ];

@@ -61,3 +61,11 @@ export interface ArticleItemProps {
   date: string;
   url: string;
 }
+
+export interface AccordionProps {
+  id: number;
+  open?: boolean;
+  title: string;
+  content: ReactNode;
+  onClick?: () => void;
+}

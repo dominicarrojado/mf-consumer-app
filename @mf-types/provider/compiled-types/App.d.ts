@@ -7,5 +7,5 @@ import '@fontsource/roboto/400-italic.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/500-italic.css';
 import './App.css';
-declare const App: React.FC;
-export default App;
+import PageHeader from './components/PageHeader';
+export default PageHeader;

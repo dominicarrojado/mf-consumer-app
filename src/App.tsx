@@ -13,6 +13,7 @@ import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
 import { cn } from './lib/utils';
+import { BASE_URL } from './lib/constants';
 import PageHeaderFallback from './components/PageHeaderFallback';
 import HeroSection from './components/HeroSection';
 import AdUnit from './components/AdUnit';
@@ -26,14 +27,14 @@ import ReviewsSection from './components/ReviewsSection';
 import ArticlesSection from './components/ArticlesSection';
 import QuestionsSection from './components/QuestionsSection';
 
-const Provider = lazy(() => import('provider'));
+const RemotePageHeader = lazy(() => import('provider'));
 
 const App = () => {
   return (
     <>
       <ErrorBoundary fallback={<PageHeaderFallback />}>
         <Suspense fallback={<PageHeaderFallback />}>
-          <Provider />
+          <RemotePageHeader brandAnchor={{ href: BASE_URL }} />
         </Suspense>
       </ErrorBoundary>
       <HeroSection />

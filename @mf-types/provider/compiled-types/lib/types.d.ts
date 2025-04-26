@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
+import { HTMLProps } from 'react';
 export type NavItem = {
     type: 'link' | 'header' | 'divider';
     icon?: typeof CheckCircleIcon;
@@ -12,3 +13,6 @@ export type NavGroup = {
     items: Array<NavItem>;
 };
 export type NavGroupItems = Array<NavGroup>;
+export type PageHeaderProps = {
+    brandAnchor: HTMLProps<HTMLAnchorElement>;
+};

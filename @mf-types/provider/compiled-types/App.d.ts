@@ -7,5 +7,5 @@ import '@fontsource/roboto/400-italic.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/500-italic.css';
 import './App.css';
-import PageHeader from './components/PageHeader';
-export default PageHeader;
+declare function App(): import("react/jsx-runtime").JSX.Element;
+export default App;

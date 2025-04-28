@@ -39,13 +39,13 @@ function HeroSection() {
           <div
             className={cn(
               'mt-auto flex flex-col gap-[15px]',
-              'sm:mt-[50px] sm:flex-row! sm:gap-[20px]'
+              'sm:mt-[50px] sm:flex-row sm:gap-[20px]'
             )}
           >
-            <Button className={cn('w-full', 'sm:w-fit!')}>Buying A Home</Button>
+            <Button className={cn('w-full', 'sm:w-fit')}>Buying A Home</Button>
             <Button
               variant="outline-primary"
-              className={cn('w-full', 'sm:w-fit!')}
+              className={cn('w-full', 'sm:w-fit')}
             >
               Refinancing A Mortgage
             </Button>

@@ -1,1 +1,1 @@
-export declare const BRAND_URL: string;
+export declare const BRAND_URL: any;

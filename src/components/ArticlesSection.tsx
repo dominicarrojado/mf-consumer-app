@@ -12,7 +12,7 @@ function ArticlesSection() {
       <Container
         className={cn(
           'flex flex-col gap-[30px]',
-          'lg:grid! lg:grid-cols-[auto_1fr] lg:grid-rows-[auto_auto_1fr] lg:[grid-template-areas:_"title_button"_"list_list"]'
+          'lg:grid lg:grid-cols-[auto_1fr] lg:grid-rows-[auto_auto_1fr] lg:[grid-template-areas:_"title_button"_"list_list"]'
         )}
       >
         <HeadingTwo
@@ -23,7 +23,7 @@ function ArticlesSection() {
         <div
           className={cn(
             'flex flex-col gap-[15px]',
-            'lg:flex-row! lg:justify-between lg:[grid-area:list]'
+            'lg:flex-row lg:justify-between lg:[grid-area:list]'
           )}
         >
           {ARTICLE_ITEMS.map((item) => (

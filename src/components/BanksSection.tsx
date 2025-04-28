@@ -53,7 +53,7 @@ function BanksSection() {
             <img
               src={item.logo}
               alt={item.displayName}
-              className={cn('h-[30px] w-auto select-none', 'lg:h-[40px]!')}
+              className={cn('h-[30px] w-auto select-none', 'lg:h-[40px]')}
             />
           </SwiperSlide>
         ))}

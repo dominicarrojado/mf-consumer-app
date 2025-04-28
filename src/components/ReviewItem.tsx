@@ -18,7 +18,7 @@ function ReviewItem(props: ReviewItemProps) {
   return (
     <div
       className={cn(
-        'mx-auto flex max-w-[321px] flex-col gap-[30px] rounded-br-[8px] rounded-bl-[8px] border border-t-[4px]! border-[#F2F2F2] p-[15px]',
+        'mx-auto flex max-w-[321px] flex-col gap-[30px] rounded-br-[8px] rounded-bl-[8px] border border-t-[4px] border-[#F2F2F2] p-[15px]',
         '[box-shadow:0px_10px_15px_0px_rgba(152,_152,_154,_0.10)]'
       )}
     >

@@ -11,7 +11,7 @@ function BenefitsSection() {
     <Container
       className={cn(
         'mx-auto flex max-w-5xl flex-col gap-[30px] py-[30px]',
-        'lg:grid! lg:grid-cols-[auto_auto] lg:grid-rows-[auto_1fr] lg:justify-between lg:[grid-template-areas:_"title_media"_"benefits_media"]'
+        'lg:grid lg:grid-cols-[auto_auto] lg:grid-rows-[auto_1fr] lg:justify-between lg:[grid-template-areas:_"title_media"_"benefits_media"]'
       )}
     >
       <HeadingTwo
@@ -26,7 +26,7 @@ function BenefitsSection() {
       <div
         className={cn(
           'flex h-[330px] w-full justify-center overflow-hidden rounded-[16px] bg-[#f2f2f2]',
-          'lg:h-[500px]! lg:w-[500px]! lg:[grid-area:media]'
+          'lg:h-[500px] lg:w-[500px] lg:[grid-area:media]'
         )}
       >
         <video

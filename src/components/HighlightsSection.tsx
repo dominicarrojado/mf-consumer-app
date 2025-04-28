@@ -10,7 +10,7 @@ function HighlightsSection() {
       <div
         className={cn(
           'mx-auto flex max-w-6xl flex-col gap-[30px] rounded-[16px] bg-[#153947] px-[15px] pt-[15px] pb-[30px] text-white',
-          'lg:flex-row! lg:items-center lg:justify-center',
+          'lg:flex-row lg:items-center lg:justify-center',
           'lg:min-h-[380px] lg:bg-[url(@/static/illustrations/highlights-banner-lg.svg)] lg:bg-cover lg:bg-center lg:bg-no-repeat'
         )}
       >
@@ -20,7 +20,7 @@ function HighlightsSection() {
             'bg-[url(@/static/illustrations/highlights-banner-sm.svg)] bg-cover bg-left-bottom bg-no-repeat',
             'sm:max-w-[649px] sm:gap-[40px] sm:pt-[76px] sm:pl-[292px]',
             'sm:bg-[url(@/static/illustrations/highlights-banner-md.svg)]',
-            'lg:h-auto lg:w-[360px]! lg:bg-transparent lg:bg-none lg:px-0 lg:pt-[20px] lg:pl-[130px]'
+            'lg:h-auto lg:w-[360px] lg:bg-transparent lg:bg-none lg:px-0 lg:pt-[20px] lg:pl-[130px]'
           )}
         >
           {HIGHLIGHT_ITEMS.map((item, idx) => (
@@ -30,7 +30,7 @@ function HighlightsSection() {
         <div
           className={cn(
             'flex flex-col gap-[30px]',
-            'lg:w-[465px] lg:shrink-0 lg:gap-[50px]! lg:pr-[15px]'
+            'lg:w-[465px] lg:shrink-0 lg:gap-[50px] lg:pr-[15px]'
           )}
         >
           <HeadingTwo className={cn('text-center text-white', 'lg:text-left')}>
@@ -41,7 +41,7 @@ function HighlightsSection() {
           <div
             className={cn(
               'mx-auto flex w-full max-w-[390px] flex-col gap-[20px]',
-              'lg:max-w-full lg:flex-row!'
+              'lg:max-w-full lg:flex-row'
             )}
           >
             <Button>Buying A Home</Button>

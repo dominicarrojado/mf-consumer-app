@@ -30,17 +30,14 @@ function CallToActionSection() {
         <div
           className={cn(
             'mx-auto mt-[20px] flex max-w-[390px] flex-col gap-[15px]',
-            'lg:mt-0 lg:flex-row-reverse!'
+            'lg:mt-0 lg:flex-row-reverse'
           )}
         >
           <Button variant="info">
             <img src={chatLogo} alt="WhatsApp" className="h-[20px] w-auto" />
             WhatsApp
           </Button>
-          <Button
-            variant="outline-secondary"
-            className="lg:border-transparent!"
-          >
+          <Button variant="outline-secondary" className="lg:border-transparent">
             Get A Callback
           </Button>
         </div>

@@ -12,7 +12,7 @@ function QuestionsSection() {
     <Container
       className={cn(
         'flex flex-col gap-[30px] pt-[35px] pb-[70px]',
-        'py-[60px] lg:flex-row! lg:gap-[80px]!'
+        'lg:flex-row lg:gap-[80px] lg:py-[60px]'
       )}
     >
       <HeadingTwo

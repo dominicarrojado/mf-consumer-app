@@ -20,7 +20,7 @@ function ReviewsSection() {
         <div
           className={cn(
             'flex flex-col gap-[30px] py-[30px]',
-            'lg:mx-auto lg:grid! lg:max-w-5xl lg:grid-cols-[auto_1fr] lg:grid-rows-[auto_auto_1fr] lg:[grid-template-areas:_"title_button"_"cards_cards"_"logo_logo"]'
+            'lg:mx-auto lg:grid lg:max-w-5xl lg:grid-cols-[auto_1fr] lg:grid-rows-[auto_auto_1fr] lg:[grid-template-areas:_"title_button"_"cards_cards"_"logo_logo"]'
           )}
         >
           <HeadingTwo

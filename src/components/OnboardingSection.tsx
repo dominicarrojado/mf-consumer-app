@@ -27,10 +27,7 @@ function OnboardingSection() {
 
   return (
     <div
-      className={cn(
-        'bg-[#F2F2F2] px-[15px]',
-        'lg:bg-transparent! lg:pb-[60px]!'
-      )}
+      className={cn('bg-[#F2F2F2] px-[15px]', 'lg:bg-transparent lg:pb-[60px]')}
     >
       <div
         className={cn(
@@ -41,7 +38,7 @@ function OnboardingSection() {
         <div
           className={cn(
             'mx-auto flex max-w-5xl flex-col items-center gap-[30px]',
-            'lg:grid! lg:grid-cols-[1fr_450px] lg:grid-rows-[auto_auto_1fr] lg:items-start! lg:gap-0! lg:[grid-template-areas:_"image_cards"_"title_cards"_"button_cards"]'
+            'lg:grid lg:grid-cols-[1fr_450px] lg:grid-rows-[auto_auto_1fr] lg:items-start lg:gap-0 lg:[grid-template-areas:_"image_cards"_"title_cards"_"button_cards"]'
           )}
         >
           <img
@@ -58,7 +55,7 @@ function OnboardingSection() {
               'lg:mt-[50px] lg:text-left lg:[grid-area:title]'
             )}
           >
-            Discover your mortgage <br className="hidden lg:block!" />
+            Discover your mortgage <br className="hidden lg:block" />
             options with us
           </HeadingTwo>
           <div
